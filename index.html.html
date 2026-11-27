@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Areeta ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{--wine:#6e243d;--rose:#b86d7c;--cream:#fff8f0;--ink:#38252c;--gold:#d8b77a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}.serif{font-family:'Playfair Display',serif}.tiny{letter-spacing:.22em;text-transform:uppercase;font-size:10px}
+#intro{min-height:100svh;background:radial-gradient(circle at 50% 35%,#9a5366,#4a172b 72%);color:#fff8f0;display:grid;place-items:center;text-align:center;padding:30px;position:relative;overflow:hidden}
+#intro:before,#intro:after{content:"✦";position:absolute;color:#e9c995;opacity:.55;font-size:22px;animation:twinkle 3s infinite alternate}#intro:before{top:16%;left:17%}#intro:after{right:18%;bottom:18%;animation-delay:1s}
+@keyframes twinkle{to{opacity:1;transform:scale(1.5) rotate(25deg)}}
+.intro-inner{max-width:650px;z-index:1}.intro-inner h1{font:600 clamp(48px,10vw,88px)/1.05 'Playfair Display',serif;margin:22px 0 14px}.intro-inner p{color:#f4dfe1;line-height:1.8}
+.seal{width:116px;height:116px;border:1px solid #e6c995;border-radius:50%;display:grid;place-items:center;margin:0 auto 28px;font:italic 40px 'Playfair Display',serif;color:#f2d9a8;box-shadow:0 0 0 8px #ffffff0a}
+.primary{border:0;background:#f2d9a8;color:#4a172b;padding:15px 26px;border-radius:40px;font-weight:700;box-shadow:0 12px 30px #1d071b55;transition:.25s}.primary:hover{transform:translateY(-3px);box-shadow:0 16px 35px #1d071b77}
+#main{display:none}.topbar{position:sticky;top:0;z-index:10;background:#fffaf2eF;backdrop-filter:blur(12px);border-bottom:1px solid #eadbd3;padding:12px 5vw;display:flex;justify-content:space-between;align-items:center}.brand{font:italic 21px 'Playfair Display',serif;color:var(--wine)}.music{border:1px solid #dec7c0;background:#fff8f0;color:var(--wine);padding:9px 14px;border-radius:30px;font-size:12px}
+.hero{min-height:82vh;display:grid;place-items:center;text-align:center;padding:90px 22px;background:linear-gradient(145deg,#f9e8e1,#fff8f0 55%,#f1d9d0);position:relative}.hero:before{content:"";position:absolute;width:270px;height:270px;border:1px solid #d8b77a66;border-radius:50%;top:12%;left:-120px}.hero:after{content:"♡";position:absolute;font-size:150px;color:#b86d7c12;right:7%;bottom:3%}
+.hero h2{font:600 clamp(48px,9vw,92px)/1.06 'Playfair Display',serif;color:var(--wine);margin:18px 0}.hero .sub{font:italic 22px 'Playfair Display',serif;color:#93606a}.scroll{margin-top:45px;color:#956b70;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+section.content{max-width:1050px;margin:auto;padding:95px 24px}.section-head{text-align:center;margin-bottom:42px}.section-head h3{font:600 clamp(34px,6vw,52px) 'Playfair Display',serif;color:var(--wine);margin:12px 0}.section-head p{color:#886f70;line-height:1.7}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:center}.polaroid{background:white;padding:11px 11px 20px;box-shadow:0 12px 30px #63384b18;transform:rotate(var(--r));transition:.3s}.polaroid:hover{transform:rotate(0) translateY(-8px)}.photo{height:210px;background:linear-gradient(145deg,#f1d7d4,#eadac8);display:grid;place-items:center;overflow:hidden;position:relative}.photo img{width:100%;height:100%;object-fit:cover}.photo span{font-size:35px;color:#a66d76}.polaroid label{display:block;text-align:center;font:italic 17px 'Playfair Display',serif;color:#78515b;padding-top:13px;cursor:pointer}.polaroid input{display:none}
+.memory-note{margin-top:34px;text-align:center;color:#96777a;font-size:12px}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:18px}.memory{padding:28px;background:#fff;border:1px solid #efdfd8;border-radius:5px;box-shadow:0 10px 25px #61394b0a}.memory .num{color:#c08b81;font:italic 25px 'Playfair Display',serif}.memory h4{font:600 23px 'Playfair Display',serif;color:var(--wine);margin:9px 0}.memory p{color:#806e6d;line-height:1.7;font-size:14px}
+.letter-wrap{background:#6e243d;padding:65px 22px}.letter{max-width:720px;margin:auto;background:#fff8f0;padding:clamp(28px,6vw,65px);box-shadow:0 20px 60px #260b1a55;position:relative}.letter:before{content:"";position:absolute;inset:12px;border:1px solid #d8b77a;pointer-events:none}.letter h3{font:italic 38px 'Playfair Display',serif;color:var(--wine);margin:0 0 25px}.letter p{font:17px/1.95 'Playfair Display',serif;color:#665057}.sign{font:italic 25px 'Playfair Display',serif;color:var(--wine);text-align:right;margin-top:32px}
+.surprise{text-align:center;background:#f7e8e1;padding:85px 22px}.surprise h3{font:600 clamp(36px,7vw,58px) 'Playfair Display',serif;color:var(--wine)}#secret{display:none;max-width:600px;margin:25px auto 0;padding:25px;background:#fffaf5;border:1px dashed #c78e91;color:#79525b;line-height:1.8}
+footer{text-align:center;padding:35px;color:#a18483;font-size:12px;background:#fff8f0}
+@media(max-width:760px){.gallery{grid-template-columns:repeat(2,1fr);gap:14px}.photo{height:170px}.timeline{grid-template-columns:1fr}.topbar{padding:11px 18px}.hero{min-height:72vh}}
+@media(max-width:390px){.gallery{gap:10px}.photo{height:145px}.polaroid{padding:8px 8px 15px}}
+</style>
+</head>
+<body>
+<div id="intro">
+ <div class="intro-inner">
+  <div class="seal">A</div>
+  <div class="tiny">A little surprise, made with love</div>
+  <h1>For Areeta</h1>
+  <p>Some days deserve more than a message.<br>Today, this little world is all yours.</p>
+  <button class="primary" onclick="openGift()">Open your birthday surprise&nbsp; ♡</button>
+ </div>
+</div>
+<div id="main">
+ <nav class="topbar"><div class="brand">a little world for Areeta ♡</div><button class="music" id="musicBtn" onclick="toggleMusic()">♫ Play birthday melody</button></nav>
+ <header class="hero">
+  <div>
+   <div class="tiny" style="color:#a16d72">Today is all about you</div>
+   <h2>Happy Birthday<br><i>Areeta</i> ♡</h2>
+   <div class="sub">May your world always feel as lovely as you make mine.</div>
+   <div class="scroll">↓ &nbsp; a little journey through us &nbsp; ↓</div>
+  </div>
+ </header>
+ <section class="content">
+  <div class="section-head"><div class="tiny" style="color:#b17d80">The little moments</div><h3>Our memory gallery</h3><p>Tap any photo frame to add a favourite picture.<br>These spaces are waiting for your memories.</p></div>
+  <div class="gallery">
+   <div class="polaroid" style="--r:-3deg"><label for="p1"><div class="photo" id="box1"><span>＋</span></div>the sweetest smile</label><input id="p1" type="file" accept="image/*" onchange="loadPhoto(event,1)"></div>
+   <div class="polaroid" style="--r:2deg"><label for="p2"><div class="photo" id="box2"><span>＋</span></div>one for the memories</label><input id="p2" type="file" accept="image/*" onchange="loadPhoto(event,2)"></div>
+   <div class="polaroid" style="--r:-2deg"><label for="p3"><div class="photo" id="box3"><span>＋</span></div>my favourite moment</label><input id="p3" type="file" accept="image/*" onchange="loadPhoto(event,3)"></div>
+   <div class="polaroid" style="--r:3deg"><label for="p4"><div class="photo" id="box4"><span>＋</span></div>you, being you</label><input id="p4" type="file" accept="image/*" onchange="loadPhoto(event,4)"></div>
+  </div>
+  <div class="memory-note">Your selected photos stay in this browser session. ♡</div>
+ </section>
+ <section class="content" style="padding-top:30px">
+  <div class="section-head"><div class="tiny" style="color:#b17d80">A few things worth keeping</div><h3>Little things, big feelings</h3><p>Because the best memories are often made of the smallest things.</p></div>
+  <div class="timeline">
+   <article class="memory"><div class="num">01 / always</div><h4>Your smile</h4><p>May you always have a hundred reasons to smile, and people around you who make every one of them count.</p></article>
+   <article class="memory"><div class="num">02 / forever</div><h4>Your kind heart</h4><p>Never lose the lovely little things that make you who you are. The world is brighter with them in it.</p></article>
+   <article class="memory"><div class="num">03 / wishes</div><h4>All your dreams</h4><p>I hope this year brings new places, beautiful surprises, brave beginnings and dreams turning real.</p></article>
+   <article class="memory"><div class="num">04 / today</div><h4>Just for you</h4><p>Today, take all the pictures, eat the cake, laugh a little louder and let yourself feel celebrated.</p></article>
+  </div>
+ </section>
+ <div class="letter-wrap"><article class="letter">
+  <div class="tiny" style="color:#b17d80">A note from the heart</div><h3>Dear Areeta,</h3>
+  <p>Happy Birthday, Areeta. ♡</p>
+  <p>I hope you know how special you are. I hope life surprises you in the gentlest ways, gives you reasons to be proud of yourself, and brings you closer to everything your heart wishes for.</p>
+  <p>May your days be filled with warmth, your nights with peace, and your journey with people and moments worth remembering. Keep being your beautiful, wonderful self.</p>
+  <p>Today is your day. Make a wish, close your eyes, and believe that lovely things are on their way.</p>
+  <div class="sign">With love, always ♡</div>
+ </article></div>
+ <section class="surprise"><div class="tiny" style="color:#a16d72">One last little thing</div><h3>There's a secret<br>just for you…</h3><button class="primary" onclick="reveal()">Open your final surprise ✨</button><div id="secret">Areeta, wherever life takes you, I hope you never forget how much happiness you deserve. Keep shining, keep dreaming, and keep being you. <br><span style="font:italic 23px 'Playfair Display',serif">Happy Birthday, once again. ♡</span></div></section>
+ <footer>Made with love, just for Areeta · ♡</footer>
+</div>
+<script>
+let audioCtx=null, musicOn=false, melodyTimer=null, noteIndex=0;
+const notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,659.25,783.99,1046.5];
+function playNote(){
+ if(!audioCtx||!musicOn)return;
+ const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();
+ osc.type='sine';osc.frequency.value=notes[noteIndex++%notes.length];
+ gain.gain.setValueAtTime(.0001,audioCtx.currentTime);
+ gain.gain.exponentialRampToValueAtTime(.075,audioCtx.currentTime+.04);
+ gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.48);
+ osc.connect(gain);gain.connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+.5);
+}
+function toggleMusic(){
+ const btn=document.getElementById('musicBtn');
+ if(!audioCtx)audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+ if(audioCtx.state==='suspended')audioCtx.resume();
+ musicOn=!musicOn;
+ if(musicOn){playNote();melodyTimer=setInterval(playNote,520);btn.textContent='♫ Pause birthday melody'}
+ else{clearInterval(melodyTimer);btn.textContent='♫ Play birthday melody'}
+}
+function openGift(){document.getElementById('intro').style.display='none';document.getElementById('main').style.display='block';window.scrollTo(0,0);setTimeout(()=>document.querySelector('.hero').scrollIntoView({behavior:'smooth'}),80)}
+function reveal(){const s=document.getElementById('secret');s.style.display='block';s.scrollIntoView({behavior:'smooth',block:'center'});confetti()}
+function loadPhoto(e,n){const file=e.target.files[0];if(!file)return;const url=URL.createObjectURL(file);const box=document.getElementById('box'+n);box.innerHTML='';const img=document.createElement('img');img.src=url;box.appendChild(img)}
+function confetti(){for(let i=0;i<42;i++){const el=document.createElement('i');el.textContent=['✦','♡','✧','·'][i%4];el.style.cssText=`position:fixed;z-index:30;left:${Math.random()*100}vw;top:-20px;color:${['#b86d7c','#d8b77a','#8d5264'][i%3]};font-size:${12+Math.random()*18}px;pointer-events:none;transition:transform 2.5s ease,opacity 2.5s`;document.body.appendChild(el);requestAnimationFrame(()=>{el.style.transform=`translate(${(Math.random()-.5)*160}px,${window.innerHeight+50}px) rotate(${Math.random()*500}deg)`;el.style.opacity='0'});setTimeout(()=>el.remove(),2700)}}
+</script>
+</body></html>
